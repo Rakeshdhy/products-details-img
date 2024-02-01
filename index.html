@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Image Gallery click to View</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+
+<div class="product">
+ <div class="small-product">
+<img src="images/image_1.jpg" alt="" onclick="myfun(this)" >
+<img src="images/image_2.jpg" alt="" onclick="myfun(this)" >
+<img src="images/image_3.jpg" alt="" onclick="myfun(this)" >
+<img src="images/image_4.jpg" alt="" onclick="myfun(this)">
+ </div>
+
+
+<div class="large-img">
+<img id="viewLargeImg" src="images/image_1.jpg" alt="img" >
+</div>
+</div>
+
+<script>
+let viewLarge = document.getElementById("viewLargeImg");
+
+function myfun(largeImg){
+viewLarge.src = largeImg.src;
+}
+
+</script>
+
+
+
+</body>
+</html>
